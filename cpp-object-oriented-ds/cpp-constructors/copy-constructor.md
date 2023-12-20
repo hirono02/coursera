@@ -7,7 +7,7 @@
     - Returning an object from a function (by value)
     - Initializing a new object
 - Example:
-    -`Cube::Cube(const Cube &obj);`
+    `Cube::Cube(const Cube &obj);`
 - Copy constructor creates a new object (constructor)
 
 

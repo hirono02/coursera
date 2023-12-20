@@ -8,4 +8,4 @@
     - Has exactly one argument
         - The argument must be const reference of the class' type
     - Example:
-        -`Cube& Cube::operator=(const Cube &obj)`
+        `Cube& Cube::operator=(const Cube &obj)`
