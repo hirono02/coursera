@@ -1,0 +1,15 @@
+### Destructors
+- When the instance of a class is cleaned up, the **class destructor** is the last call in a class's lifecycle.
+- The only action of this automatic default destructor is to call the default destructor of all member objects.
+- A destructor should *never* be called directly. Instead, it is automatically called when the object's memory is being relcaimed by the system:
+    - If the object is on the *stack*, when the function returns
+    - If the object is on the *heap*, when `delete` is used
+- To add custom behaviour to the end-of-life of the function, a custom destructor can be defined as:
+    - A custom destructor is a member function
+    - The function's destructor is the name of the class, preceded by a tilde `~`.
+    - All destructors have zero arguments and no return type
+    - Example: `Cube::~Cube();`
+- A custom destructor is essential when an object allocates an external resource that must be closed or freed when the object is destroyed. Examples:
+    - Heap memory
+    - Open files
+    - Shared memory
